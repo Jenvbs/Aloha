@@ -1,0 +1,45 @@
+/*Logo*/
+
+img.resize {
+    max-width:30%;
+    max-height:30%;
+}
+
+.logo img {
+    margin: 10px auto;
+}
+
+
+/*Navigation*/
+ul {
+    list-style: none;
+}
+
+ul.menu li{
+    display: inline-block;
+}
+
+/*Basket*/
+
+.basket img {
+    width: 100%;
+}
+
+.basket {
+    max-width: 20%;
+    max-height: 20%;
+}
+
+
+/*Flower Banner*/
+
+.footer {
+background-color: grey;
+height: 50%;
+position: relative;
+top: 0;
+left: 0;
+width: 250%;
+}
+
+
