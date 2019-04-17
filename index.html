@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
+  <title>Aloha!</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -10,14 +11,12 @@
 
 <body>
   <header>
-    <section class="logo">
-      <a href="index.html">
-        <img class="resize" src="images/aloha-logo.svg" rel="Logo" ref="This is a logo." />
-      </a>
+    <section class="logobox">
+      <img class="logo" src="images/aloha-logo.svg" rel="Logo" ref="This is a logo." />
     </section>
-    <section>
-      <nav>
-        <ul class="menu">
+    <section class="menu">
+      <nav class="menu">
+        <ul class="menu items">
           <li><a href="index.html">About</a></li>
           <li><a href="index.html">Shop</a></li>
           <li><a href="index.html">Featured</a></li>
@@ -26,100 +25,118 @@
       </nav>
     </section>
     <div class="basket">
-      <img src="images/cart-icon.svg" />
+      <img class="basket" src="images/cart-icon.svg" />
     </div>
   </header>
-  <section>
+  <section class="section1">
     <div class="banner">
-      <img class="flowers" src="images/flower-bkgd.jpg" />
       <img class="girl" src="images/banner-girl.png" />
     </div>
+    <div class="backgroundalpha"></div>
+    <div class="bannercopy">
+      <h2 class="newcollection">New Collection</h2>
+      <h1 class="springsummer"> Spring/Summer 2016</h1>
+    </div>
   </section>
-  <section>
-    <h1>Hand-<em>Crafted</em> <b>Styles</b></h1>
+
+  <section class="sectionbox02">
+    <h1><em>Hand-Crafted</em> <b>Styles</b></h1>
     <p>Aloha-Apparel Co. sells only the finest ready-to-travel clothing. Browse our <br /> current selection of products
       or sign-up for updates below.</p>
   </section>
-  <section>
-    <div>
-      <img src="images/mens-category.jpg" />
-      <h1>Men's</h1>
+  <section class="flexboxcategories">
+    <div class="item mens">
+      <img src="images/mens-category.jpg" alt="Men's Category" style="width:100%;">
+      <h1 class="title">Men's</h1>
     </div>
-    <div>
-      <img src="images/trends-category.jpg" alt="trends-category" />
-      <h1>Trends</h1>
+    <div class="item trends">
+      <img src="images/trends-category.jpg" alt="trends-category" style="width:100%;" />
+      <h1 class="title">Trends</h1>
     </div>
-    <div>
-      <img src="images/glasses-category.jpg" alt="glasses-category" />
-      <h1>Glasses</h1>
+    <div class="item glasses">
+      <img src="images/glasses-category.jpg" alt="glasses-category" style="width:100%;" />
+      <h1 class="title">Glasses</h1>
     </div>
-    <div>
-      <img src="images/sale-category.jpg" alt="sale-category" />
-      <h1>Sale</h1>
+    <div class="item sale">
+      <img src="images/sale-category.jpg" alt="sale-category" style="width:100%;" />
+      <h1 class="title">Sale</h1>
     </div>
-    <div>
-      <img src="images/bags-category.jpg" alt="bags-category" />
-      <h1>Bags</h1>
+    <div class="item bags">
+      <img src="images/bags-category.jpg" alt="bags-category" style="width:100%;" />
+      <h1 class="title">Bags</h1>
     </div>
-    <div>
-      <img src="images/womens-category.jpg" alt="womens-category" />
-      <h1>Women's</h1>
+    <div class="item womens">
+      <img src="images/womens-category.jpg" alt="womens-category" style="width:100%;" />
+      <h1 class="title">Women's</h1>
     </div>
   </section>
-  <section>
-    <h1><em>Most-Loved</em> <b>Products</b></h1>
-    <div>
-      <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
-      <h3>Dresses</h3>
-      <h2>Checked Stretch Dress</h2>
-      <h3>$129.00</h3>
+  <div class="mostlovedcategory">
+    <section>
+      <h1 class="most-loved"> <em>Most-Loved</em> <b></b>Products</b></h1>
+      <container class="descriptions">
+        <div class="most-loved" id="products">
+          <div>
+            <img src="images/checked-stretch-dress.jpg" alt="checked-stretch-dress">
+            <h3>Dresses</h3>
+            <h2>Checked Stretch Dress</h2>
+            <h3>$129.00</h3>
+          </div>
+          <div>
+            <img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
+            <h3>Bags</h3>
+            <h2>Blue Hipster Backpack</h2>
+            <h3>$69.00</h3>
+          </div>
+          <div>
+            <img src="images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
+            <h3>Denim</h3>
+            <h2>Denim Overall Shorts</h2>
+            <h3>$89.00</h3>
+          </div>
+          <div>
+            <img src="images/pink-dotted-dress.jpg" alt="pink-dotted-dress">
+            <h3>Dresses</h3>
+            <h2>Pink Dotted Dress</h2>
+            <h3>$99.00</h3>
+          </div>
+        </div>
+      </container>
+      <!--Insert Slider Dots Code-->
+    </section>
+  </div>
+  <section class="waves">
+    <div class="backgroundalpha"></div>
+    <div class="sign-up">
+      <h1><em>Sign-up for</em>&nbspUpdates</h1>
+      <p class="copy"> Stay updated on our latest product releases, be first to find out about <br />upcoming sales, and
+        get
+        free style tips from our blog. Unsubscribe at any time.</p>
     </div>
-    <div>
-      <img src="images/blue-hipster-backpack.jpg" alt="blue-hipster-backpack">
-      <h3>Bags</h3>
-      <h2>Blue Hipster Backpack</h2>
-      <h3>$69.00</h3>
-    </div>
-    <div>
-      <img src="images/demin-overall-shorts.jpg" alt="demin-overall-shorts">
-      <h3>Denim</h3>
-      <h2>Denim Overall Shorts</h2>
-      <h3>$89.00</h3>
-    </div>
-    <div>
-      <img src="images/pink-dotted-dress.jpg" alt="pink-dotted-dress">
-      <h3>Dresses</h3>
-      <h2>Pink Dotted Dress</h2>
-      <h3>$99.00</h3>
-    </div>
-    <!--Insert Slider Dots Code-->
-  </section>
-  <section>
-    <img src="images/wave-bkgd.jpg" />
-    <h1><em>Sign-up for</em> <b>Updates</b></h1>
-    <p> Stay updated on our latest product releases, be first to find out about <br />upcoming sales, and get free style
-      tip from our blod. Unsubscribe at any time.</p>
-    <div>
+    <div class="subscribebutton">
       <form action="" method="post">
         <input type="text" placeholder="Your Email" />
       </form>
-      <input type="submit" value="subscribe" />
+      <input class="submitbutton" type="submit" value="subscribe" />
     </div>
   </section>
-  <section class="footer">
-    <div class="credits">
-      <p>2016 Aloha Apparel Co.<br /> Powered by HTML and CSS.</p>
-      <p>604-604-6040. info@alohaapparel.com</p>
-      <p>1490 W Broadway <br />Vancouver, BC,</p>
-    </div>
-    <ul class="socialmedia">
-      <li><i class="fab fa-facebook-f"></i></li>
-      <li><i class="fab fa-twitter"></i></li>
-      <li><i class="fab fa-instagram"></i></li>
-      <li><i class="fab fa-pinterest"></i></li>
-      <li><i class="fab fa-google-plus-g"></i></li>
-    </ul>
-  </section>
+  <footer>
+    <section class="footer">
+      <div class="credits">
+        <p>2016 Aloha Apparel Co.<br /> Powered by HTML and CSS.</p>
+        <p>604-604-6040. info@alohaapparel.com</p>
+        <p class="address">1490 W Broadway <br />Vancouver, BC, Canada</p>
+      </div>
+      <div class="socialicons">
+        <ul class="socialicons">
+          <li class="icon"><a href=""><i class="fab fa-facebook-f"></i>Facebook</a></li>
+          <li class="icon"><a href=""><i class="fab fa-twitter"></i>Twitter</a></li>
+          <li class="icon"><a href=""><i class="fab fa-instagram"></i>Instagram</a></li>
+          <li class="icon"><a href=""><i class="fab fa-pinterest"></i>Pintrest</a></li>
+          <li class="icon"><a href=""><i class="fab fa-google-plus-g"></i>Google+</a></li>
+        </ul>
+      </div>
+    </section>
+  </footer>
 </body>
 
 </html>
