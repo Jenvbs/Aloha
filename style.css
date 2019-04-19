@@ -631,18 +631,78 @@ div.item.womens {
 /*------------*/
 /* Most Loved */
 /*------------*/
-div#products .most-loved {
-    margin-bottom: 5vh;
+
+div.mostlovedcategory {
+    height: 81vh;
+}
+h1.most-loved {
+    margin-top: 7vh;
+    margin-bottom: 4vh;
+    font-family: Playfair Display;
+    text-align: center;
+    font-size: 2.5rem;
+}
+h1.most-loved em {
+    font-weight: 300;
 }
 
 
-div#products.most-loved {
-    height: 83.5vh;
-    justify-content: space-around;
+div.most-loved {
+    width: 100%;
+    height: 69vh;
     display: flex;
-    flex-wrap: nowrap;
-    align-items: flex-start;
+    overflow-x: auto;
 }
+
+div.product {
+    margin: 4vh 6vh 0 2vh;
+    text-align: center;
+    flex-shrink: 0;
+
+}
+
+div.product img {
+    height: 33vh;
+    width: auto;
+}
+
+div.descriptions {
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.product h2 {
+    font-family: Playfair Display;
+    color: #e2574c;
+    font-weight: 300;
+}
+
+div.product h3 {
+    text-transform: uppercase;
+    color: #969696;
+    font-weight: 500;
+    font-size: .9rem;
+}
+.button {
+    width: 14vh;
+    height: 3.5vh;
+    font-size: .8rem;
+    background-color:black;
+    border: none;
+    color: white;
+    padding: .2vh 1vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 1vh 1vh;
+    border-radius: 5vh;
+}
+
+
+
 /*--------*/
 /*Sign-Up */
 /*--------*/
