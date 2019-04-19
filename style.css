@@ -384,9 +384,9 @@ img {
 ul {
     list-style: none;
 }
-
+/*------------*/
 /* Header */
-
+/*------------*/
 header {
     max-width:100%;
     max-height:12vh;
@@ -394,9 +394,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
 }
-
+/*------------*/
 /*Logo*/
-
+/*------------*/
 section.logobox {
     margin: 2vh 3vh 2vh 2vh;
     max-width:28vh;
@@ -409,9 +409,9 @@ img.logo {
     height: 100%;
 
 }
-
+/*------------*/
 /*Menu*/
-
+/*------------*/
 li a {
     text-decoration: none;
     font-weight: 500;
@@ -444,9 +444,9 @@ ul.menu.items li {
     margin-left: 15px;
     margin-right: 15px;
 }
-
+/*------------*/
 /*Basket*/
-
+/*------------*/
 div.basket {
     margin-right: 2vh;
     margin-top: 2vh;
@@ -460,9 +460,9 @@ img.basket{
     width: 100%;
     height: 100%;
 }
-
+/*------------*/
 /* section 1 */
-
+/*------------*/
 section.section1 {
     max-height:100%;
     max-width:100%;
@@ -525,9 +525,9 @@ img.girl {
     font-weight: 100;
 }
 
-
+/*------------*/
 /* Section 2 */
-
+/*------------*/
 .sectionbox02 {
     line-height: 2.6vh;
     height: 33.5vh;
@@ -553,107 +553,84 @@ img.girl {
     font-size: 1.1rem;
     font-weight: 300;
 }
+/*------------*/
 /* categories */
+/*------------*/
 
+.categories {
+    height: 80.4vh;
+}
+
+div.item img {
+    display:block;
+}
+
+h1.title {
+    font-family: Raleway;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    z-index: 90;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    text-shadow: 2px 2px 7px #00000085;
+}
+
+div.flexboxcategories01 {
+    margin-bottom: .5vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 div.item.mens {
+    padding: 0 1vh 0 0;
     position: relative;
     text-align: center;
     color: white;
-    width: 100%;
-    height: 50%;
-    margin: 0;
-    padding: 0;
-}
-
-.mens h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-shadow: 2px 2px 7px #00000085;
 }
 
 div.item.trends {
-    background-color: red;
-    position: relative;
-    height:100%;
-    width:100%;
-    text-align: center;
-    color: white;
-}
-
-div.item.trends img {
-    height:100%;
-}
-
-div.item.trends h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-shadow: 2px 2px 7px #00000085;
-}
-
-.glasses {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.glasses h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-shadow: 2px 2px 7px #00000085;
-}
-
-.sale {
+div.item.glasses {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.sale h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-shadow: 2px 2px 7px #00000085;
+div.flexboxcategories02 {
+    margin-top: .9vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.bags {
+div.item.sale {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.bags h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-shadow: 2px 2px 7px #00000085;
-}
-
-.womens {
+div.item.bags {
     position: relative;
     text-align: center;
     color: white;
 }
 
-.womens h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-shadow: 2px 2px 7px #00000085;
+div.item.womens {
+    padding: 0 0 0 1vh;
+    position: relative;
+    text-align: center;
+    color: white;
 }
-
-
-
-
-
-
-
-
-
+/*------------*/
 /* Most Loved */
-
+/*------------*/
 div#products .most-loved {
     margin-bottom: 5vh;
 }
@@ -666,9 +643,9 @@ div#products.most-loved {
     flex-wrap: nowrap;
     align-items: flex-start;
 }
-
+/*--------*/
 /*Sign-Up */
-
+/*--------*/
 
 section.waves {
     background-image: url("images/wave-bkgd.jpg");
@@ -735,9 +712,9 @@ input.submitbutton {
     display: inline-block;
     font-size: 16px;
 }
-
+/*--------*/
 /* Footer */
-
+/*--------*/
 footer{
     max-height: 20vh;
 }
