@@ -700,7 +700,11 @@ div.product h3 {
     margin: 1vh 1vh;
     border-radius: 5vh;
 }
-
+.button a {
+    color: white;
+    text-decoration: none;
+}
+.button a:hover {color:rgb(114, 114, 114);}
 
 
 /*--------*/
@@ -709,7 +713,7 @@ div.product h3 {
 
 section.waves {
     background-image: url("images/wave-bkgd.jpg");
-    line-height: 7vh;
+    line-height: 10vh;
     height: 43vh;
     margin-bottom:1vh;
     background-position: bottom;
@@ -740,7 +744,7 @@ section.waves {
     font-weight: lighter;
 }
 .copy {
-    line-height: 4vh;
+    line-height: 5vh;
     position: relative;
     z-index: 90;
     font-size: 1.1rem;
@@ -751,26 +755,47 @@ section.waves {
 div.subscribebutton {
     position: relative;
     z-index: 90;
-
+    width: 60vh;
+    height: 6vh;
 }
 
 .subscribebutton form {
-    position: relative;
+    position: absolute;
     background-color: white;
-    width:35vh;
+    border-radius:3vh;
+    width:60vh; /*changes size of white field*/
+    height: 6vh; /*changes size of white field*/
+    border: none;
+    outline:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+div.subscribebutton input {
+    position: absolute;
+    height:5.8vh;
+    width: 55vh;
+    border: none;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 input.submitbutton {
-    position: absolute;
+    max-width: 15vh;
+    max-height: 5vh;
+    margin-top: .5vh;
+    margin-left: 14.5vh;
+    position: relative;
     background-color:#e2574c;
     border: none;
-    border-radius: 1em;
+    border-radius:3vh;
     color: white;
-    padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
+
+    font-size: 1rem;
+    font-weight: 900;
 }
 /*--------*/
 /* Footer */
