@@ -557,77 +557,215 @@ img.girl {
 /* categories */
 /*------------*/
 
-.categories {
-    height: 80.4vh;
-}
-
-div.item img {
-    display:block;
-}
-
 h1.title {
-    font-family: Raleway;
+    position: absolute;
+    color: white;
     font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: 500;
     z-index: 90;
-    position: absolute;
     text-align: center;
-    top: 40%;
-    left: 40%;
-    text-shadow: 2px 2px 7px #00000085;
+    text-shadow: .2vh .2vh 6vh #00000066;
 }
 
-div.flexboxcategories01 {
-    margin-bottom: .5vh;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+section.categories{
+    display: grid;
+    grid-template-columns: repeat(4, 24.55vw);
+    grid-template-rows: repeat(2, 38vh);
+    grid-gap: 1vh;
+    width: 100vw;
+    height: 77vh;
 }
+
 div.item.mens {
-    padding: 0 1vh 0 0;
-    position: relative;
-    text-align: center;
-    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
 }
+
+.item.mens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    overflow: hidden;
+}
+
 
 div.item.trends {
-    position: relative;
-    text-align: center;
-    color: white;
+    grid-column: 3;
+    grid-row: 1;
 }
+
+.item.trends img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    overflow: hidden;
+}
+
 
 div.item.glasses {
-    position: relative;
-    text-align: center;
-    color: white;
+    grid-column: 4;
+    grid-row: 1;
 }
 
-div.flexboxcategories02 {
-    margin-top: .9vh;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+.item.glasses img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    overflow: hidden;
 }
+
 
 div.item.sale {
-    position: relative;
-    text-align: center;
-    color: white;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.item.sale img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    overflow: hidden;
 }
 
 div.item.bags {
-    position: relative;
-    text-align: center;
-    color: white;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.item.bags img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    overflow: hidden;
 }
 
 div.item.womens {
-    padding: 0 0 0 1vh;
-    position: relative;
-    text-align: center;
-    color: white;
+    grid-column: 3 / 5;
+    grid-row: 2;
 }
+
+.item.womens img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    overflow: hidden;
+}
+
+/*
+
+h1.title {
+    position: absolute;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    z-index: 90;
+    text-align: center;
+    text-shadow: .2vh .2vh 6vh #00000066;
+}
+
+.flexboxcategories01 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.item.mens {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.item.mens img {
+    width: auto;
+    max-height: 100%;
+}
+
+.item.trends {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.item.trends img {
+    width: auto;
+    max-height: 100%;
+}
+
+.item.glasses {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.item.glasses img {
+    width: auto;
+    max-height: 100%;
+}
+
+
+.flexboxcategories02 {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: space-between;
+}
+
+.item.sale {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.item.sale img {
+    width: auto;
+    max-height: 100%;
+}
+
+
+div#salebags.item.sale {
+    width: auto;
+    height: 100%;
+}
+
+.item.bags {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.item.bags img {
+    width: auto;
+    max-height: 100%;
+}
+
+
+.item.womens {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.item.womens img {
+
+    width: auto;
+    max-height: 100%;
+}
+*/
+
 /*------------*/
 /* Most Loved */
 /*------------*/
