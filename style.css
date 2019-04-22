@@ -1,6 +1,10 @@
+/*------------*/
 /* Fonts */
+/*------------*/
 
+/*------------*/
 /* Playfair */
+/*------------*/
 
 @font-face {
     font-family: 'Playfair Display';
@@ -145,8 +149,9 @@
     font-weight: 900;
     font-style: normal;
 }
-
+/*------------*/
 /* Railway */
+/*------------*/
 @font-face {
     font-family: 'Raleway';
     src: url('fonts/transfonter.org-20190415-092206/Raleway-ExtraBold.eot');
@@ -368,7 +373,10 @@
     margin: 0px;
     padding:0px;
     }
+
+/*------------*/
 /* body */
+/*------------*/
 
 body {
     margin: 0;
@@ -388,7 +396,7 @@ ul {
 /* Header */
 /*------------*/
 header {
-    max-width:100%;
+    width:100vw;
     max-height:12vh;
     display: flex;
     flex-direction: row;
@@ -416,14 +424,16 @@ li a {
     text-decoration: none;
     font-weight: 500;
     color: #e2574c;
+
 }
+li a:hover { color:#b64036;}
 
 section.menu {
     display: flex;
     align-items: center;
     padding-top: 1vh;
     padding-right: 21vh;
-    margin: 10px 10px 10px 10px;
+    margin: 1vh 1vh 1vh 1vh;
     max-width: 100%;
     max-height: 18vh;
 }
@@ -444,11 +454,13 @@ ul.menu.items li {
     margin-left: 15px;
     margin-right: 15px;
 }
+
+
 /*------------*/
 /*Basket*/
 /*------------*/
 div.basket {
-    margin-right: 2vh;
+    margin-right: 2vw;
     margin-top: 2vh;
     max-width:28vh;
     max-height:8vh;
@@ -560,11 +572,11 @@ img.girl {
 
 section.categories{
     display: grid;
-    grid-template-columns: repeat(4, 24.55vw);
-    grid-template-rows: repeat(2, 38vh);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 40vh);
     grid-gap: 1vh;
-    width: 100vw;
-    height: 77vh;
+    max-width: 100vw;
+    max-height: 81vh;
 }
 
 div.overlay {
@@ -572,8 +584,9 @@ div.overlay {
     background-color: rgba(0, 0, 0, 0.222);
     top: 0;
     bottom: 0;
-    width: 100%;
-    z-index: 80;
+    left: 0;
+    right: 0;
+    z-index: 40;
 }
 
 .item img {
@@ -716,119 +729,12 @@ div.item.womens h1.title {
     line-height:38vh;
 }
 
-/*
-
-h1.title {
-    position: absolute;
-    color: white;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    font-weight: 500;
-    z-index: 90;
-    text-align: center;
-    text-shadow: .2vh .2vh 6vh #00000066;
-}
-
-.flexboxcategories01 {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-
-.item.mens {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.item.mens img {
-    width: auto;
-    max-height: 100%;
-}
-
-.item.trends {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.item.trends img {
-    width: auto;
-    max-height: 100%;
-}
-
-.item.glasses {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.item.glasses img {
-    width: auto;
-    max-height: 100%;
-}
-
-
-.flexboxcategories02 {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: space-between;
-}
-
-.item.sale {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.item.sale img {
-    width: auto;
-    max-height: 100%;
-}
-
-
-div#salebags.item.sale {
-    width: auto;
-    height: 100%;
-}
-
-.item.bags {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.item.bags img {
-    width: auto;
-    max-height: 100%;
-}
-
-
-.item.womens {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.item.womens img {
-
-    width: auto;
-    max-height: 100%;
-}
-*/
-
 /*------------*/
 /* Most Loved */
 /*------------*/
 
 div.mostlovedcategory {
-    height: 81vh;
+    height: 76.5vh;
 }
 h1.most-loved {
     margin-top: 7vh;
@@ -843,26 +749,26 @@ h1.most-loved em {
 
 
 div.most-loved {
-    width: 100%;
-    height: 69vh;
+    width: 100vw;
+    height: 60vh;
     display: flex;
     overflow-x: auto;
 }
 
 div.product {
-    margin: 4vh 6vh 0 2vh;
+    margin: 2vh 7vh 0 2vh;
     text-align: center;
     flex-shrink: 0;
 
 }
 
 div.product img {
-    height: 33vh;
+    height: 32vh;
     width: auto;
 }
 
 div.descriptions {
-    height: 22vh;
+    height: 18vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -881,11 +787,18 @@ div.product h3 {
     font-weight: 500;
     font-size: .9rem;
 }
+
+div.product h4 {
+    text-transform: uppercase;
+    color: #969696;
+    font-weight: 500;
+    font-size: .7rem;
+}
 .button {
-    width: 14vh;
+    width: 7.5vw;
     height: 3.5vh;
     font-size: .8rem;
-    background-color:black;
+    background-color:#242424;
     border: none;
     color: white;
     padding: .2vh 1vh;
@@ -908,7 +821,7 @@ div.product h3 {
 
 section.waves {
     background-image: url("images/wave-bkgd.jpg");
-    line-height: 10vh;
+    line-height: 8vh;
     height: 43vh;
     margin-bottom:1vh;
     background-position: bottom;
@@ -923,10 +836,16 @@ section.waves {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+div.sign-up {
+    top:0;
 }
 
 .sign-up h1 {
+    margin-top: 6vh;
+    margin-bottom: 1vh;
     font-family: Playfair Display;
     font-size: 2.5rem;
     text-shadow: 1px 1px 7px #00000036;
@@ -938,20 +857,28 @@ section.waves {
 .sign-up h1 em{
     font-weight: lighter;
 }
+
 .copy {
-    line-height: 5vh;
+    margin-bottom: 3vh;
+    line-height: 4.5vh;
     position: relative;
     z-index: 90;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: white;
 }
 
+/* Subscribe Form */
 
 div.subscribebutton {
     position: relative;
     z-index: 90;
     width: 60vh;
     height: 6vh;
+}
+
+::placeholder {
+    color: #a9a9a9;
+    font-weight: lighter;
 }
 
 .subscribebutton form {
@@ -970,10 +897,9 @@ div.subscribebutton {
 div.subscribebutton input {
     position: absolute;
     height:5.8vh;
-    width: 55vh;
+    width: 53vh;
     border: none;
     font-size: 1rem;
-    font-weight: 300;
 }
 
 input.submitbutton {
@@ -988,9 +914,7 @@ input.submitbutton {
     color: white;
     text-align: center;
     text-decoration: none;
-
-    font-size: 1rem;
-    font-weight: 900;
+    cursor: pointer;
 }
 /*--------*/
 /* Footer */
@@ -1036,7 +960,7 @@ li.icon a {
     height: 2rem;
 }
 
-li.icon a:hover {background: rgba(255,255,255,0.05);}
+li.icon a:hover {color: #969696;}
 
 li i.fab {
     width: 2rem;
