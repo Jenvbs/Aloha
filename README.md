@@ -1,0 +1,7 @@
+Project 01 - Aloha
+Jennifer Vobis
+23.04.19
+
+For this project we were required to create the HTML and CSS files for the homepage of an online fashion shop named 'Aloha'.
+We began learning about the different tags in HTML and used them to declare the content of the website. Throughout my time working on the project I got more confident using tags and CSS attributes, however still made use of online resources such as w3.org and css-tricks.com. The content of the lessons was structured well in accordance with my work on the project and allowed me to practise the theory instantly. One of the biggest challenges in the beginning was to keep my code organised and avoid using unnecessary tags or classes, which got easier as I started incorporating my CSS. While declaring style attributes for the content I ran into a few issues when creating the layout for my page, however all it took was to take a step back and start with focusing on details before jumping into moving whole sections into place.
+I tried to incorporate a few events and listeners through Javascript to make the basket and submission form usable, but ultimately could not get it to work so I decided to leave it out of my submission. I will take the time now to revise my notes on the topic and complete a few tutorials on the subject such as the recommended Code Academy course to be able to fully make use of it in my next project.
