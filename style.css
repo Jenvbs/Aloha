@@ -885,8 +885,8 @@ div.subscribebutton {
     position: absolute;
     background-color: white;
     border-radius:3vh;
-    width:60vh; /*changes size of white field*/
-    height: 6vh; /*changes size of white field*/
+    width:60vh;
+    height: 6vh;
     border: none;
     outline:none;
     display: flex;
